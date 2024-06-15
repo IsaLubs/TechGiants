@@ -1,9 +1,9 @@
 # flake8: noqa
 from .settings import *
 
-DEBUG = True
-ALLOWED_HOSTS += ['*']
-WSGI_APPLICATION = 'market.wsgi.application'
+DEBUG = False
+ALLOWED_HOSTS += ['.herokuapp.com']
+WSGI_APPLICATION = 'demo.wsgi.application'
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
