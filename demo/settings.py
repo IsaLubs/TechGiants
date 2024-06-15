@@ -12,9 +12,9 @@ ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')
 DEBUG = False
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
-#SECRET_KEY = '-05sgp9!deq=q1nltm@^^2cc+v29i(tyybv3v2t77qi66czazj'
+SECRET_KEY = '-05sgp9!deq=q1nltm@^^2cc+v29i(tyybv3v2t77qi66czazj'
 
-SECRET_KEY = os.environ.get("SECRET_KEY")
+#SECRET_KEY = os.environ.get("SECRET_KEY")
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 INSTALLED_APPS = [
@@ -86,18 +86,18 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
 
-if 'DEBUG':
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": os.path.join(BASE_DIR, 'db.sqlite3')
-        }
+#if 'DEBUG':
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": os.path.join(BASE_DIR, 'db.sqlite3')
     }
+}
 
-else:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL') , conn_max_age=600)
-    }
+#else:
+#    DATABASES = {
+#        'default': dj_database_url.parse(os.environ.get('DATABASE_URL') , conn_max_age=600)
+#    }
 '''
 if ENVIRONMENT == 'production':
     DEBUG = True
