@@ -9,7 +9,7 @@ if os.path.isfile('env.py'):
 
 ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')
 
-DEBUG = False
+DEBUG = True
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = '-05sgp9!deq=q1nltm@^^2cc+v29i(tyybv3v2t77qi66czazj'
