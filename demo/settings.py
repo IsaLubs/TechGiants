@@ -1,17 +1,21 @@
 import os
 import django
 from django.utils.encoding import force_str
-from pathlib import Path
 django.utils.encoding.force_text = force_str
 
+if os.path.isfile('env.py'):
+    import env
 
-#ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')
+
+ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')
 
 DEBUG = True
-#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = '-05sgp9!deq=q1nltm@^^2cc+v29i(tyybv3v2t77qi66czazj'
-ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com']
+
+#SECRET_KEY = os.environ.get("SECRET_KEY")
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -28,8 +32,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap4',
     'django_countries',
-    'core',
-    'newsletter'
+    'core'
 ]
 
 MIDDLEWARE = [
@@ -40,8 +43,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # Add WhiteNoise middleware
+    'allauth.account.middleware.AccountMiddleware'
 ]
 
 ROOT_URLCONF = 'demo.urls'
@@ -69,6 +71,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'demo.wsgi.application'
+
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
@@ -76,12 +79,14 @@ USE_L10N = True
 USE_TZ = True
 
 # static files (CSS, JS, Image)
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_in_env')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
 
+#if 'DEBUG':
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
@@ -89,7 +94,12 @@ DATABASES = {
     }
 }
 
-'''if ENVIRONMENT == 'production':
+#else:
+#    DATABASES = {
+#        'default': dj_database_url.parse(os.environ.get('DATABASE_URL') , conn_max_age=600)
+#    }
+'''
+if ENVIRONMENT == 'production':
     DEBUG = True
     SECRET_KEY = os.getenv('SECRET_KEY')
     SESSION_COOKIE_SECURE = True
@@ -99,8 +109,8 @@ DATABASES = {
     SECURE_HSTS_SECONDS = 31536000
     SECURE_REDIRECT_EXEMPT = []
     SECURE_SSL_REDIRECT = True
-    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')'''
-
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+'''
 # Auth
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
@@ -128,7 +138,9 @@ SOCIALACCOUNT_PROVIDERS = {
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-STRIPE_PUBLIC_KEY = 'pk_test_51PUEYaP1UqsLk64tVjpbji96Js579nEqyvKeGnsAxPtcA6HWi74ArNT7wMvoReCORZoE1bvCGpSwyU81OLBauhOL00rajmEjfQ'
-STRIPE_SECRET_KEY = 'sk_test_51PUEYaP1UqsLk64toKfXwYVvzjP3TPj6KEcGz6MpYczKV0cPeyNro9MYVrGb5BBCTis6KJLXr2Ospn1Ih96fUcAY00UpWxm6JK'
+STRIPE_PUBLIC_KEY = 'pk_test_lX3r6OMjOU2yzFsNSHq6belT00EY82kZmH'
+STRIPE_SECRET_KEY = 'sk_test_tn0CTDaIJHUJyAqhsf39cfsC00LNjsqDnb'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
