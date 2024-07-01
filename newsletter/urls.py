@@ -1,7 +1,7 @@
 from django.urls import path
-from . import views
+from .views import newsletter_signup, newsletter_success
 
 urlpatterns = [
-    path('newsletter/', views.newsletter_signup, name='newsletter_signup'),
-    # ... other url patterns ...
+    path('signup/', newsletter_signup, name='newsletter_signup'),
+    path('success/', newsletter_success, name='newsletter_success'),
 ]
