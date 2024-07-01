@@ -1,75 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter Signup</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: black;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            display: flex;
-            max-width: 800px;
-            width: 100%;
-        }
-        .left-column, .right-column {
-            flex: 1;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 0.9em;
-            opacity: 0.8;
-        }
-        form {
-            margin-top: 20px;
-        }
-        input[type="email"] {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-        }
-        button {
-            background: none;
-            border: none;
-            color: white;
-            cursor: pointer;
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="left-column">
-            <h1>Subscribe to Our Newsletter For Weekly Article Update.</h1>
-            <p>Passages of lorem ipsum available, but the majority have suffered alteration, by injected words.</p>
-        </div>
-        <div class="right-column">
-            <h2>Subscribe</h2>
-            <p>Enter your email below to be the first to know about new collections.</p>
-            <form method="post">
-                {% csrf_token %}
-                <div style="position: relative;">
-                    <input type="email" placeholder="Your Email" required>
-                    <button type="submit">→</button>
-                </div>
-            </form>
-        </div>
-    </div>
+    <h2>Signup for our Newsletter</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Signup</button>
+    </form>
 </body>
 </html>
