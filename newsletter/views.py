@@ -1,11 +1,16 @@
-from django.shortcuts import render, redirect
-from django.contrib import messages
+from django.shortcuts import redirect, render
+
+from .forms import SubscriberForm
 
 def newsletter_signup(request):
     if request.method == 'POST':
-        email = request.POST.get('email')
-        # Here you would typically save the email to your database
-        # For now, we'll just add a success message
-        messages.success(request, f'Thank you for subscribing with {email}!')
-        return redirect('newsletter_signup')
-    return render(request, 'newsletter_signup.html')
+        form = SubscriberForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('newsletter_success')
+    else:
+        form = SubscriberForm()
+    return render(request, 'newsletter/signup.html', {'form': form})
+
+def newsletter_success(request):
+    return render(request, 'newsletter/success.html')
