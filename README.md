@@ -45,7 +45,7 @@
 ## 1. Introduction
 The Django E-Commerce project is an advanced online platform designed for purchasing laptops and phones. It offers a robust e-commerce experience where users can browse products, securely place orders using Stripe, and provide feedback through product reviews.
 
-![Screenshot 2024-07-01 133047](https://github.com/KadDenuwara/TechGiants/assets/137709290/10656f03-4382-4f8c-95f0-886aa84f68d3)
+![Screenshot 2024-07-01 133047](https://github.com/IsaLubs/TechGiants/assets/147058041/c97bd14a-5eae-4cbe-9622-b94a93095fc1)
 
 ## 2. User Experience
 
@@ -102,27 +102,27 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 
 #### Home Page
 
-![Screenshot 2024-07-07 003942](https://github.com/KadDenuwara/TechGiants/assets/137709290/9a7e1ecf-0ba9-4037-9fcd-ec8436ff29bd)
+![Screenshot 2024-07-07 003942](https://github.com/IsaLubs/TechGiants/assets/147058041/ccc08712-f6b6-44da-9a7c-cc5e574b26a1)
 
-![Screenshot 2024-07-07 004000](https://github.com/KadDenuwara/TechGiants/assets/137709290/773cdec3-93ab-4161-be7a-e128448e0755)
+![Screenshot 2024-07-07 004000](https://github.com/IsaLubs/TechGiants/assets/147058041/719135d1-4178-415b-9bb7-485364a7e8aa)
 
-![Screenshot 2024-07-07 004031](https://github.com/KadDenuwara/TechGiants/assets/137709290/42c0b951-cdb4-4484-8e0d-6b8f15956dd0)
+![Screenshot 2024-07-07 004031](https://github.com/IsaLubs/TechGiants/assets/147058041/505ce62a-aef4-4bd5-a6c5-eb6289e477ef)
 
 #### Product Page
 
-![Screenshot 2024-07-07 004059](https://github.com/KadDenuwara/TechGiants/assets/137709290/e5ca6c81-0b9b-4ad4-93fa-e661a93b2f32)
+![Screenshot 2024-07-07 004059](https://github.com/IsaLubs/TechGiants/assets/147058041/c0480235-d27b-4ff2-adb6-f046741711a9)
 
 #### SignIn Page
 
-![Screenshot 2024-07-07 004226](https://github.com/KadDenuwara/TechGiants/assets/137709290/e2959288-72d7-4816-86bb-923e785ab9eb)
+![Screenshot 2024-07-07 004226](https://github.com/IsaLubs/TechGiants/assets/147058041/98d412e0-2b44-4ed0-a3f0-9aa8bc0c55b1)
 
 #### SignUp Page
 
-![Screenshot 2024-07-07 004238](https://github.com/KadDenuwara/TechGiants/assets/137709290/473ca701-837a-4eec-a5dd-524f2f93aea9)
+![Screenshot 2024-07-07 004238](https://github.com/IsaLubs/TechGiants/assets/147058041/91e2890b-abe3-4442-9390-913e663595e1)
 
 #### ContactUs Page  
 
-![Screenshot 2024-07-07 004157](https://github.com/KadDenuwara/TechGiants/assets/137709290/f28f3342-bc8c-4d6d-9c49-d0beea04099a)
+![Screenshot 2024-07-07 004157](https://github.com/IsaLubs/TechGiants/assets/147058041/2b7b9cef-05ec-4f18-bd48-8e94659d5a32)
 
 ---
 ## 6. Features
@@ -181,16 +181,16 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 #### W3C CSS Validator
 - My css passed as well when it came to testing as I was frequently testing it in the validator.
 
-![Screenshot 2024-07-06 222140](https://github.com/KadDenuwara/TechGiants/assets/137709290/3edea770-bb77-465c-9ae3-92561ddf916b)
+![Screenshot 2024-07-06 222140](https://github.com/IsaLubs/TechGiants/assets/147058041/ba3557dd-fd8b-43af-b0d5-6a7baa34e224)
 
-![Screenshot 2024-07-06 222208](https://github.com/KadDenuwara/TechGiants/assets/137709290/68ea245f-a459-4d50-88ba-136948557aca)
+![Screenshot 2024-07-06 222208](https://github.com/IsaLubs/TechGiants/assets/147058041/28df3540-f107-4abe-93b6-4cc97985fd95)
 
-![Screenshot 2024-07-06 222237](https://github.com/KadDenuwara/TechGiants/assets/137709290/711b65a0-92da-4654-8570-c015346eb9d6)
+![Screenshot 2024-07-06 222237](https://github.com/IsaLubs/TechGiants/assets/147058041/434bebc6-a146-4ca8-89b4-88def80e27b0)
 
 #### CI Python checker
 - I checked all of my python files with the Code Institute python checker and recieved no issues with any of the files.
 
-![Screenshot 2024-07-06 223131](https://github.com/KadDenuwara/TechGiants/assets/137709290/b4c8ec1a-eecb-40b5-81dc-eadb09d46d42)
+![Screenshot 2024-07-06 223131](https://github.com/IsaLubs/TechGiants/assets/147058041/ede41c3b-e876-4d7d-897b-af125bb0373e)
 
 ### Responsiveness
 
@@ -276,7 +276,7 @@ Your application is now successfully deployed!
 Stay updated with our latest news and offers by following us on Facebook.
 
 <a href="https://www.facebook.com/profile.php?id=61561756724837&sk=photos" target="_blank">
-  <img src="https://github.com/KadDenuwara/TechGiants/assets/137709290/a20e2e8c-66f4-441d-9522-637bdddf7ac5" alt="Facebook Page">
+  <img src="https://github.com/IsaLubs/TechGiants/assets/147058041/e943ac6e-5ebc-4c0d-bf63-f46ec20d5fbb" alt="Facebook Page">
 </a>
 
 Click the image above to visit our Facebook page.
