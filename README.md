@@ -125,3 +125,33 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 ![Screenshot 2024-07-07 004157](https://github.com/KadDenuwara/TechGiants/assets/137709290/f28f3342-bc8c-4d6d-9c49-d0beea04099a)
 
 ---
+## 6. Features
+
+### Existing Features
+
+#### Home
+- Presents a visually appealing and informative landing page showcasing featured products and promotional offers.
+
+#### Profile page
+- Allows users to manage personal information, view order history, and update preferences.
+
+#### Upload page
+- Enables sellers to upload product details, including images and descriptions, to list items for sale.
+
+#### Search
+- Facilitates easy navigation through a robust search functionality that retrieves relevant products based on user queries.
+
+#### Nav bar
+- Provides intuitive navigation with a responsive navbar that adapts seamlessly across different device sizes.
+
+#### Post detail
+- Displays comprehensive product details including specifications, pricing, and customer reviews for informed purchasing decisions.
+
+#### Comments
+- Enables users to leave feedback and engage in discussions about products through interactive commenting features.
+
+#### Delete / Edit comments
+- Allows users to manage their reviews by editing or removing.
+
+
+---
