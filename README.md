@@ -155,3 +155,22 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 
 
 ---
+## 7. Technologies Used
+
+### Languages
+- **HTML**: Used for creating structured Django templates.
+- **CSS**: Stylesheets for customizing the website's visual presentation.
+- **JavaScript**: Enhances interactivity and dynamic content on the frontend.
+- **Python**: Primary language for backend development using Django's framework.
+
+### Tools
+- **Django**: Framework for rapid development and robust web application management.
+- **Crispy Forms**: Integrates forms seamlessly into Django templates for improved user interaction.
+- **GitHub**: Version control and collaborative development platform.
+- **Illustrator**: Used for creating detailed wireframes and visual assets.
+
+### Styling
+- **Bootstrap**: Provides pre-built components and responsive layout utilities for frontend design.
+- **Google Fonts**: Adds visually appealing typography options to enhance readability and aesthetics.
+
+---
