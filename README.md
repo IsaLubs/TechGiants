@@ -96,3 +96,32 @@ Captures user-generated content including product titles, user-friendly URLs (sl
 Manages uploaded product details such as titles, descriptions, images, and pricing information.
 
 ---
+## 5. Skeleton
+
+### Wireframes
+
+#### Home Page
+
+![Screenshot 2024-07-07 003942](https://github.com/KadDenuwara/TechGiants/assets/137709290/9a7e1ecf-0ba9-4037-9fcd-ec8436ff29bd)
+
+![Screenshot 2024-07-07 004000](https://github.com/KadDenuwara/TechGiants/assets/137709290/773cdec3-93ab-4161-be7a-e128448e0755)
+
+![Screenshot 2024-07-07 004031](https://github.com/KadDenuwara/TechGiants/assets/137709290/42c0b951-cdb4-4484-8e0d-6b8f15956dd0)
+
+#### Product Page
+
+![Screenshot 2024-07-07 004059](https://github.com/KadDenuwara/TechGiants/assets/137709290/e5ca6c81-0b9b-4ad4-93fa-e661a93b2f32)
+
+#### SignIn Page
+
+![Screenshot 2024-07-07 004226](https://github.com/KadDenuwara/TechGiants/assets/137709290/e2959288-72d7-4816-86bb-923e785ab9eb)
+
+#### SignUp Page
+
+![Screenshot 2024-07-07 004238](https://github.com/KadDenuwara/TechGiants/assets/137709290/473ca701-837a-4eec-a5dd-524f2f93aea9)
+
+#### ContactUs Page  
+
+![Screenshot 2024-07-07 004157](https://github.com/KadDenuwara/TechGiants/assets/137709290/f28f3342-bc8c-4d6d-9c49-d0beea04099a)
+
+---
