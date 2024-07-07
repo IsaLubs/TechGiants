@@ -86,3 +86,13 @@ The project is meticulously structured to ensure efficient development and user 
 - **Checkout**: Secure payment gateway integration with Stripe for hassle-free transactions.
 
 ---
+
+## 4. Project Databases
+
+### Post Model
+Captures user-generated content including product titles, user-friendly URLs (slugs), author details, product descriptions, uploaded images, and user reviews for products.
+
+### Upload
+Manages uploaded product details such as titles, descriptions, images, and pricing information.
+
+---
