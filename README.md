@@ -79,3 +79,10 @@ The project is meticulously structured to ensure efficient development and user 
 
 ---
 
+## 3. Project Applications
+- **User Authentication**: Secure authentication system for user management.
+- **Product Catalog**: Comprehensive catalog of laptops and phones.
+- **Shopping Cart**: Interactive cart management for seamless shopping experiences.
+- **Checkout**: Secure payment gateway integration with Stripe for hassle-free transactions.
+
+---
