@@ -174,3 +174,20 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 - **Google Fonts**: Adds visually appealing typography options to enhance readability and aesthetics.
 
 ---
+## 8. Validation
+
+### Code Validation
+
+#### W3C CSS Validator
+- My css passed as well when it came to testing as I was frequently testing it in the validator.
+
+![Screenshot 2024-07-06 222140](https://github.com/KadDenuwara/TechGiants/assets/137709290/3edea770-bb77-465c-9ae3-92561ddf916b)
+
+![Screenshot 2024-07-06 222208](https://github.com/KadDenuwara/TechGiants/assets/137709290/68ea245f-a459-4d50-88ba-136948557aca)
+
+![Screenshot 2024-07-06 222237](https://github.com/KadDenuwara/TechGiants/assets/137709290/711b65a0-92da-4654-8570-c015346eb9d6)
+
+#### CI Python checker
+- I checked all of my python files with the Code Institute python checker and recieved no issues with any of the files.
+
+![Screenshot 2024-07-06 223131](https://github.com/KadDenuwara/TechGiants/assets/137709290/b4c8ec1a-eecb-40b5-81dc-eadb09d46d42)
