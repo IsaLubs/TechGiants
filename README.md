@@ -191,3 +191,27 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 - I checked all of my python files with the Code Institute python checker and recieved no issues with any of the files.
 
 ![Screenshot 2024-07-06 223131](https://github.com/KadDenuwara/TechGiants/assets/137709290/b4c8ec1a-eecb-40b5-81dc-eadb09d46d42)
+
+### Responsiveness
+
+The responsiveness of the design was manually checked using the Chrome Developer Tools for various screens.
+
+This included:
+
+- iPhone SE
+- Pixel 5
+- Samsung Galaxy S8, S20 Ultra
+- iPad Air and Mini
+- Galaxy Fold
+- Nest Hub and Hub Max
+  
+I also opted to use the responsiveness option and checked the screens at the following width sizes:
+
+- 350px
+- 768px
+- 992px
+- 1400px
+
+No issues arose, due to the simple layout of the site.
+
+---
