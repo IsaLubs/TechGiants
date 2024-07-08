@@ -47,7 +47,9 @@ The Tech Giants website is an online shop specializing in the latest smartphones
 ## 1. Introduction
 The Django E-Commerce project is an advanced online platform designed for purchasing laptops and phones. It offers a robust e-commerce experience where users can browse products, securely place orders using Stripe, and provide feedback through product reviews.
 
-![Screenshot 2024-07-01 133047](https://github.com/IsaLubs/TechGiants/assets/147058041/c97bd14a-5eae-4cbe-9622-b94a93095fc1)
+![Screenshot 2024-07-08 064513](https://github.com/IsaLubs/TechGiants/assets/147058041/4f1fab35-2db3-4e6d-abcd-f7a1405e0c43)
+
+
 
 ## 2. User Experience
 
