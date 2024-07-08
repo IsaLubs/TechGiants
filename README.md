@@ -1,7 +1,7 @@
 # TechGiants
 
 The Tech Giants website is an online shop specializing in the latest smartphones and laptops. It offers a range of products from top brands like Apple, Samsung, and Google, with special discounts and promotions. The site features categories for phones and laptops, a section for featured products, and options to sign up for a newsletter for updates on new collections and articles. The website also provides contact information and support for users.
-
+[Visit the website here](https://techgiants-e40908f3f92d.herokuapp.com/)
 ## Table of Contents
 1. [Introduction](#1-introduction)
 2. [User Experience](#2-user-experience)
