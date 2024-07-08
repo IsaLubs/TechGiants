@@ -149,6 +149,7 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 
 #### Search
 - Facilitates easy navigation through a robust search functionality that retrieves relevant products based on user queries.
+![Screenshot 2024-07-08 081911](https://github.com/IsaLubs/TechGiants/assets/147058041/c8a490cb-fa5b-4aff-8046-a2b722ff61f4)
 
 #### Nav bar
 - Provides intuitive navigation with a responsive navbar that adapts seamlessly across different device sizes.
