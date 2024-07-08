@@ -178,6 +178,10 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 - **CSS**: Stylesheets for customizing the website's visual presentation.
 - **JavaScript**: Enhances interactivity and dynamic content on the frontend.
 - **Python**: Primary language for backend development using Django's framework.
+* [HTML](https://en.wikipedia.org/wiki/HTML "HTML") - To create the Django templates for the associated views and models in the project applications.
+* [CSS](https://en.wikipedia.org/wiki/CSS "CSS") - To style the website.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript "JavaScript") - To create interactive animations for the site.
+* [Python]( https://en.wikipedia.org/wiki/Python_(programming_language) "Python") – Is the primary language of Django and used to create all forms, models and views.
 
 ### Tools
 - **Django**: Framework for rapid development and robust web application management.
