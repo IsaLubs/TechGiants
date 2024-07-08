@@ -68,6 +68,10 @@ Users seek a seamless shopping experience with a diverse product catalog, intuit
 - As a user, I want a straightforward sign-in process to access personalized features and complete purchases securely.
 - As a user, I want to checkout quickly and securely using Stripe to finalize my purchase.
 - As a user, I want to leave detailed reviews to help other shoppers make informed decisions.
+- As a visitor I want to add a product to my shopping cart So that I can purchase it later.
+- As an admin I want to manage existing products So that I can update or remove products as needed.
+- As a user I want to write reviews for products I have purchased so that I can share my feedback with other customers.
+- As a visitor I want to view a list of products within a category So that I can choose a product to view in more detail
 
 ### 2.2 Scope
 
