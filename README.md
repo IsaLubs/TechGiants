@@ -159,6 +159,11 @@ Captures user-generated content including product titles, user-friendly URLs (sl
 - Presents a visually appealing and informative landing page showcasing featured products and promotional offers.
 ![Screenshot 2024-07-08 082154](https://github.com/IsaLubs/TechGiants/assets/147058041/af555e55-de90-414b-b6f9-6589b736e95b)
 
+#### Social Media Links.
+- Every page throughout the project has a footer with social media links.
+- Clicking the social media like redirect the user to the social media page in a new tab, so as not to disrupt the user experience.
+![Screenshot 2024-07-08 170152](https://github.com/IsaLubs/TechGiants/assets/147058041/6d09bc36-de10-4752-b648-70d665a6fb0f)
+
 
 #### Profile page
 - Allows users to manage personal information, view order history, and update preferences.
