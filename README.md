@@ -110,7 +110,10 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 ## 5. Skeleton
 
 ### Wireframes
-
+ . This wireframe was created by using Figma 
+<div class="col-2 col-md-1 col-lg-1 mt-3 mb-3">
+                    <a href="https://www.figma.com/" target="_blank"><img src="assets/img/skills/figma.svg" alt="Figma" class="img-fluid"></a>
+                </div>
 #### Home Page
 
 ![Screenshot 2024-07-07 003942](https://github.com/IsaLubs/TechGiants/assets/147058041/ccc08712-f6b6-44da-9a7c-cc5e574b26a1)
