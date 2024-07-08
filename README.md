@@ -163,6 +163,13 @@ Captures user-generated content including product titles, user-friendly URLs (sl
 #### Profile page
 - Allows users to manage personal information, view order history, and update preferences.
 
+#### shopping Bag
+- The shopping bag page is fully responsive, showing users a picture of the item, name, price per unit, and total price.
+- Users can also choose to increase/decrease the number of items in their bag, click the update button to have the prices update.
+- user can click the remove link and have all the items within the bag removed, regardless of quantity.
+- At the bottom of the page user can find the cost of the bag, cost of delivery, the total and how much they must spend to be eligible for free delivery.
+  ![Screenshot 2024-07-08 165404](https://github.com/IsaLubs/TechGiants/assets/147058041/5bc8f124-1272-480f-ae3b-3bfe6bfe97f6)
+
 #### Upload page
 - Enables sellers to upload product details, including images and descriptions, to list items for sale.
 
