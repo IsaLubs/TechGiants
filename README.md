@@ -152,6 +152,7 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 
 #### Nav bar
 - Provides intuitive navigation with a responsive navbar that adapts seamlessly across different device sizes.
+![Screenshot 2024-07-08 081712](https://github.com/IsaLubs/TechGiants/assets/147058041/6a05000d-1ccf-4b66-a6d1-ee63294cb215)
 
 #### Post detail
 - Displays comprehensive product details including specifications, pricing, and customer reviews for informed purchasing decisions.
