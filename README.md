@@ -93,6 +93,8 @@ The project is meticulously structured to ensure efficient development and user 
 
 ## 4. Project Databases
 
+5 databases can be found in the “brush_app” application, which enable the user to create the profile required to upload posts. I created a database in the begining to support the functionality created by my user stories. The first sql map is included here and was an over zealous approach to my goal. Through timing and scope my databases changed and morphed over the duration of creating it. The most up to date map is shown as well.
+
 ![output (1)](https://github.com/IsaLubs/TechGiants/assets/147058041/f0f42fba-ab04-41b9-9eb7-0bb997650fe8)
 
 
