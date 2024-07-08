@@ -287,11 +287,21 @@ Your application is now successfully deployed!
 ----
 ## 11. Credits
 
-- [Stack Overflow](https://stackoverflow.com) provided valuable assistance with problem-solving.
-- [MDN Web Docs](https://developer.mozilla.org) contained a wealth of useful information for building the project.
-- [W3Schools](https://www.w3schools.com) always has very helpful tutorials and references on various coding topics.
-- [GitHub](https://github.com) offered numerous repositories that significantly aided in coding.
-- [GeeksforGeeks](https://www.geeksforgeeks.org) had extensive information on Python and other programming languages.
+## For Content and Code
+
+* [Building the base of the project with the I think therefore I blog.](https://github.com/Grawnya/I-think-therefore-I-blog)
+* [Lottie files webplayer creator.](https://lottiefiles.com/web-player)
+* [How to create a django view.](https://www.geeksforgeeks.org/views-in-django-python/)
+* [Best practice for data models.](https://cloud.google.com/appengine/docs/legacy/standard/python/datastore/datamodeling)
+* [How to use django tags.](https://www.w3schools.com/django/django_template_tags.php#:~:text=In%20Django%20templates%2C%20you%20can,them%20in%20%7B%25%20%25%7D%20brackets.)
+* [Checking file types with.](https://stackoverflow.com/questions/5899497/how-can-i-check-the-extension-of-a-file)
+
+## Helpful Resources
+* [Stack overflow helped a lot with problem solving.](https://stackoverflow.com/)
+* [MDM also contained a lot of helpful resources when building the project.](https://developer.mozilla.org/en-US/)
+* [W3 schools always has very helpful threads on anything to do with coding.](https://www.w3schools.com/)
+* [Github had plenty of repositories that helped a lot with coding.](https://github.com/)
+* [Geeks for geeks had a lot of great information on python.](https://www.geeksforgeeks.org/python-programming-language/)
 
   ## Follow Us on Facebook
 
