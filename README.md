@@ -282,14 +282,6 @@ Captures user-generated content including product titles, user-friendly URLs (sl
 - Confirm only the user who created the review or superusers have the option to edit a review.
 - Editing a review, edits the review, redirects to the correct section of the page.
 
-
-**WishList**
-- Confirm users who are not logged in do not have the option to add a product to the wishlist.
-- Confirm users who are logged in do have the option to add an item to their WishList.
-- Confirm users who are not logged in are redirected to the login page when clicking the WishList link.
-- Products details links correctly redirects to the correct page when clicking the link on the WishList Page.
-- Removing an item from the WishList working correctly, correctly reflected within the database.
-
 **Admin**
 - Only admins have access to the Product Management page on the account dropdown.
 - Only admins can see the Edit/Delete buttons on the product details page.
