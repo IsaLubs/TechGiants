@@ -309,7 +309,7 @@ Here’s a step-by-step guide to help you set up your account:
 
  ## step 1:Create a Facebook Business Manager Account
 Visit the Facebook Business Manager Website:
-Go to business.facebook.com.
+ [business.faceboo.](https://business.facebook.com/latest/home?nav_ref=bm_home_redirect&asset_id=372112492649962)
 Sign In:
 If you don’t have a Facebook account, you will need to create one. If you already have a Facebook account, log in with your credentials.
 Create Business Manager Account:
