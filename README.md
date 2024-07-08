@@ -154,6 +154,7 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 
 #### Delete / Edit comments
 - Allows users to manage their reviews by editing or removing.
+![Screenshot 2024-07-08 063659](https://github.com/IsaLubs/TechGiants/assets/147058041/0347440f-2c71-46db-9984-90adbe35df7f)
 
 
 ---
