@@ -192,6 +192,8 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 ### Styling
 - **Bootstrap**: Provides pre-built components and responsive layout utilities for frontend design.
 - **Google Fonts**: Adds visually appealing typography options to enhance readability and aesthetics.
+- [Bootstrap](https://getbootstrap.com/ "Bootstrap") – To provide extra styling and out-of-the-box elements e.g. burger menu.
+- [Google Fonts](https://fontawesome.com/ "Google Fonts") – For font used in the site.
 
 ---
 ## 8. Validation
