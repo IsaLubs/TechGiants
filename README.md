@@ -174,24 +174,27 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 ## 7. Technologies Used
 
 ### Languages
-- **HTML**: Used for creating structured Django templates.
-- **CSS**: Stylesheets for customizing the website's visual presentation.
-- **JavaScript**: Enhances interactivity and dynamic content on the frontend.
-- **Python**: Primary language for backend development using Django's framework.
+
 * [HTML](https://en.wikipedia.org/wiki/HTML "HTML") - To create the Django templates for the associated views and models in the project applications.
 * [CSS](https://en.wikipedia.org/wiki/CSS "CSS") - To style the website.
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript "JavaScript") - To create interactive animations for the site.
 * [Python]( https://en.wikipedia.org/wiki/Python_(programming_language) "Python") – Is the primary language of Django and used to create all forms, models and views.
 
 ### Tools
-- **Django**: Framework for rapid development and robust web application management.
-- **Crispy Forms**: Integrates forms seamlessly into Django templates for improved user interaction.
-- **GitHub**: Version control and collaborative development platform.
-- **Illustrator**: Used for creating detailed wireframes and visual assets.
+* [Django](https://www.djangoproject.com/ "Django") – The framework used in this project to incorporate databases with a website.
+* [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/ "Crispy Forms") – Formats the models into forms on webpages using the `|crispy` filter and `{% crispy %}` tag.
+* [Cloudinary](https://cloudinary.com/ "Cloudinary") - Used to store website's images.
+* [Gitpod](https://www.gitpod.io/ "Gitpod") – Used as the development environment.
+* [GitHub](https://github.com/ "GitHub") – The project’s Version Control Management System.
+* [Heroku](https://www.heroku.com/ "Heroku") – To deploy the webpage.
+* [Illustrator](https://www.adobe.com/ie/products/illustrator/campaign/pricing.html?gclid=CjwKCAjwxaanBhBQEiwA84TVXPogNfGdqMqcbQ8FXjlOcbhv5YMqMEqN6UdeCt0m35siVj5JWbijqhoCHcgQAvD_BwE&mv=search&mv=search&mv2=paidsearch&sdid=GMCWY69B&ef_id=CjwKCAjwxaanBhBQEiwA84TVXPogNfGdqMqcbQ8FXjlOcbhv5YMqMEqN6UdeCt0m35siVj5JWbijqhoCHcgQAvD_BwE:G:s&s_kwcid=AL!3085!3!547974576454!e!!g!!illustrator!1426208079!56320331432&gad=1 "Illustrator") – For the creation of associated wireframes.
+* [DrawSQL](https://drawsql.app/ "DrawSQL") – For the creation of the database diagrams.
+* [CSSgradient](https://cssgradient.io/ "CSSgradient") – For the visualisation of gradients for the sites styling.
+* [LottieFiles](https://lottiefiles.com/ "LottieFiles") – This hosts the animated logo at the top of the screen.
+
 
 ### Styling
-- **Bootstrap**: Provides pre-built components and responsive layout utilities for frontend design.
-- **Google Fonts**: Adds visually appealing typography options to enhance readability and aesthetics.
+
 - [Bootstrap](https://getbootstrap.com/ "Bootstrap") – To provide extra styling and out-of-the-box elements e.g. burger menu.
 - [Google Fonts](https://fontawesome.com/ "Google Fonts") – For font used in the site.
 
