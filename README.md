@@ -2,6 +2,8 @@
 
 The Tech Giants website is an online shop specializing in the latest smartphones and laptops. It offers a range of products from top brands like Apple, Samsung, and Google, with special discounts and promotions. The site features categories for phones and laptops, a section for featured products, and options to sign up for a newsletter for updates on new collections and articles. The website also provides contact information and support for users.
 
+[Visit the website here](https://techgiants-e40908f3f92d.herokuapp.com/)
+
 ## Table of Contents
 1. [Introduction](#1-introduction)
 2. [User Experience](#2-user-experience)
@@ -47,7 +49,9 @@ The Tech Giants website is an online shop specializing in the latest smartphones
 ## 1. Introduction
 The Django E-Commerce project is an advanced online platform designed for purchasing laptops and phones. It offers a robust e-commerce experience where users can browse products, securely place orders using Stripe, and provide feedback through product reviews.
 
-![Screenshot 2024-07-01 133047](https://github.com/IsaLubs/TechGiants/assets/147058041/c97bd14a-5eae-4cbe-9622-b94a93095fc1)
+![Screenshot 2024-07-08 064513](https://github.com/IsaLubs/TechGiants/assets/147058041/4f1fab35-2db3-4e6d-abcd-f7a1405e0c43)
+
+
 
 ## 2. User Experience
 
@@ -91,6 +95,11 @@ The project is meticulously structured to ensure efficient development and user 
 
 ## 4. Project Databases
 
+5 databases can be found in the “brush_app” application, which enable the user to create the profile required to upload posts. I created a database in the begining to support the functionality created by my user stories. The first sql map is included here and was an over zealous approach to my goal. Through timing and scope my databases changed and morphed over the duration of creating it. The most up to date map is shown as well.
+
+![output (1)](https://github.com/IsaLubs/TechGiants/assets/147058041/f0f42fba-ab04-41b9-9eb7-0bb997650fe8)
+
+
 ### Post Model
 Captures user-generated content including product titles, user-friendly URLs (slugs), author details, product descriptions, uploaded images, and user reviews for products.
 
@@ -133,6 +142,8 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 
 #### Home
 - Presents a visually appealing and informative landing page showcasing featured products and promotional offers.
+![Screenshot 2024-07-08 082154](https://github.com/IsaLubs/TechGiants/assets/147058041/af555e55-de90-414b-b6f9-6589b736e95b)
+
 
 #### Profile page
 - Allows users to manage personal information, view order history, and update preferences.
@@ -142,9 +153,11 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 
 #### Search
 - Facilitates easy navigation through a robust search functionality that retrieves relevant products based on user queries.
+![Screenshot 2024-07-08 081911](https://github.com/IsaLubs/TechGiants/assets/147058041/c8a490cb-fa5b-4aff-8046-a2b722ff61f4)
 
 #### Nav bar
 - Provides intuitive navigation with a responsive navbar that adapts seamlessly across different device sizes.
+![Screenshot 2024-07-08 081712](https://github.com/IsaLubs/TechGiants/assets/147058041/6a05000d-1ccf-4b66-a6d1-ee63294cb215)
 
 #### Post detail
 - Displays comprehensive product details including specifications, pricing, and customer reviews for informed purchasing decisions.
@@ -154,6 +167,7 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 
 #### Delete / Edit comments
 - Allows users to manage their reviews by editing or removing.
+![Screenshot 2024-07-08 063659](https://github.com/IsaLubs/TechGiants/assets/147058041/0347440f-2c71-46db-9984-90adbe35df7f)
 
 
 ---
@@ -164,6 +178,10 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 - **CSS**: Stylesheets for customizing the website's visual presentation.
 - **JavaScript**: Enhances interactivity and dynamic content on the frontend.
 - **Python**: Primary language for backend development using Django's framework.
+* [HTML](https://en.wikipedia.org/wiki/HTML "HTML") - To create the Django templates for the associated views and models in the project applications.
+* [CSS](https://en.wikipedia.org/wiki/CSS "CSS") - To style the website.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript "JavaScript") - To create interactive animations for the site.
+* [Python]( https://en.wikipedia.org/wiki/Python_(programming_language) "Python") – Is the primary language of Django and used to create all forms, models and views.
 
 ### Tools
 - **Django**: Framework for rapid development and robust web application management.
@@ -174,6 +192,8 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 ### Styling
 - **Bootstrap**: Provides pre-built components and responsive layout utilities for frontend design.
 - **Google Fonts**: Adds visually appealing typography options to enhance readability and aesthetics.
+- [Bootstrap](https://getbootstrap.com/ "Bootstrap") – To provide extra styling and out-of-the-box elements e.g. burger menu.
+- [Google Fonts](https://fontawesome.com/ "Google Fonts") – For font used in the site.
 
 ---
 ## 8. Validation
@@ -267,11 +287,21 @@ Your application is now successfully deployed!
 ----
 ## 11. Credits
 
-- [Stack Overflow](https://stackoverflow.com) provided valuable assistance with problem-solving.
-- [MDN Web Docs](https://developer.mozilla.org) contained a wealth of useful information for building the project.
-- [W3Schools](https://www.w3schools.com) always has very helpful tutorials and references on various coding topics.
-- [GitHub](https://github.com) offered numerous repositories that significantly aided in coding.
-- [GeeksforGeeks](https://www.geeksforgeeks.org) had extensive information on Python and other programming languages.
+## For Content and Code
+
+* [Building the base of the project with the I think therefore I blog.](https://github.com/Grawnya/I-think-therefore-I-blog)
+* [Lottie files webplayer creator.](https://lottiefiles.com/web-player)
+* [How to create a django view.](https://www.geeksforgeeks.org/views-in-django-python/)
+* [Best practice for data models.](https://cloud.google.com/appengine/docs/legacy/standard/python/datastore/datamodeling)
+* [How to use django tags.](https://www.w3schools.com/django/django_template_tags.php#:~:text=In%20Django%20templates%2C%20you%20can,them%20in%20%7B%25%20%25%7D%20brackets.)
+* [Checking file types with.](https://stackoverflow.com/questions/5899497/how-can-i-check-the-extension-of-a-file)
+
+## Helpful Resources
+* [Stack overflow helped a lot with problem solving.](https://stackoverflow.com/)
+* [MDM also contained a lot of helpful resources when building the project.](https://developer.mozilla.org/en-US/)
+* [W3 schools always has very helpful threads on anything to do with coding.](https://www.w3schools.com/)
+* [Github had plenty of repositories that helped a lot with coding.](https://github.com/)
+* [Geeks for geeks had a lot of great information on python.](https://www.geeksforgeeks.org/python-programming-language/)
 
   ## Follow Us on Facebook
 
