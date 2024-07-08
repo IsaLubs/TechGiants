@@ -166,9 +166,11 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 
 #### Post detail
 - Displays comprehensive product details including specifications, pricing, and customer reviews for informed purchasing decisions.
+![Screenshot 2024-07-08 161339](https://github.com/IsaLubs/TechGiants/assets/147058041/ea9024a1-dba4-4763-a105-75ba37726629)
 
 #### Comments
 - Enables users to leave feedback and engage in discussions about products through interactive commenting features.
+![Screenshot 2024-07-08 161502](https://github.com/IsaLubs/TechGiants/assets/147058041/23ee6bba-5721-4053-8f18-b5252c456c53)
 
 #### Delete / Edit comments
 - Allows users to manage their reviews by editing or removing.
