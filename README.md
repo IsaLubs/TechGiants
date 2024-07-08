@@ -303,7 +303,7 @@ Your application is now successfully deployed!
 * [Github had plenty of repositories that helped a lot with coding.](https://github.com/)
 * [Geeks for geeks had a lot of great information on python.](https://www.geeksforgeeks.org/python-programming-language/)
 
-  ## Follow Us on Facebook
+  #Marketing on Facebook
 
 Stay updated with our latest news and offers by following us on Facebook.
 
