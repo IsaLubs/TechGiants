@@ -106,10 +106,20 @@ The project is meticulously structured to ensure efficient development and user 
 
 ### Post Model
 Captures user-generated content including product titles, user-friendly URLs (slugs), author details, product descriptions, uploaded images, and user reviews for products.
+- Product Titles: The names of products listed on the site.
+- User-friendly URLs (Slugs): Simplified URLs derived from the product titles for easy navigation and SEO.
+- Author Details: Information about the users or authors who created the posts or reviews.
+- Product Descriptions: Detailed information about each product.
+- Uploaded Images: Visual content associated with products, such as pictures and diagrams.
+- User Reviews: Feedback and ratings provided by users about the products.
 
 ### Upload
-Manages uploaded product details such as titles, descriptions, images, and pricing information.
 
+- Manages uploaded product details such as titles, descriptions, images, and pricing information.
+- Titles: The names of the products.
+- Descriptions: Information about the products.
+- Images: Visual content of the products.
+- Pricing Information: The cost details of the products
 ---
 ## 5. Skeleton
 
