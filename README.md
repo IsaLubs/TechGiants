@@ -140,6 +140,7 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 
 #### Home
 - Presents a visually appealing and informative landing page showcasing featured products and promotional offers.
+![Uploading Screenshot 2024-07-08 082154.png…]()
 
 #### Profile page
 - Allows users to manage personal information, view order history, and update preferences.
