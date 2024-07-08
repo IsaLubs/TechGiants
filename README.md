@@ -328,6 +328,15 @@ I also opted to use the responsiveness option and checked the screens at the fol
 
 No issues arose, due to the simple layout of the site.
 
+**Browser Testing**
+
+During development, the testing was mainly done solely using Google Chrome.
+
+In production the site has been tested on the following browsers,
+- Google Chrome
+- Mozilla Firefox
+- Opera
+- Microsoft Edge
 ---
 ## 9. Bugs
 
