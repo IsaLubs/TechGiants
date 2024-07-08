@@ -110,7 +110,7 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 ## 5. Skeleton
 
 ### Wireframes
- . This wireframe was created by using Figma 
+- This wireframe was created by using Figma 
 [Figma](https://www.figma.com/design/bsltgnLz4LzVP0gCgowNvU/Tech-Giants-(Home-Newdesign)?node-id=0-1&t=ljwcdIW4LlwQluhx-0)
 #### Home Page
 
