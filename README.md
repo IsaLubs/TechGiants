@@ -303,6 +303,7 @@ Your application is now successfully deployed!
 * [Github had plenty of repositories that helped a lot with coding.](https://github.com/)
 * [Geeks for geeks had a lot of great information on python.](https://www.geeksforgeeks.org/python-programming-language/)
 
+---
   # Marketing on Facebook
 
 Here’s a step-by-step guide to help you set up your account:
