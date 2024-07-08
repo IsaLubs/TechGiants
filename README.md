@@ -93,6 +93,9 @@ The project is meticulously structured to ensure efficient development and user 
 
 ## 4. Project Databases
 
+![output (1)](https://github.com/IsaLubs/TechGiants/assets/147058041/f0f42fba-ab04-41b9-9eb7-0bb997650fe8)
+
+
 ### Post Model
 Captures user-generated content including product titles, user-friendly URLs (slugs), author details, product descriptions, uploaded images, and user reviews for products.
 
