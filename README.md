@@ -140,7 +140,8 @@ Manages uploaded product details such as titles, descriptions, images, and prici
 
 #### Home
 - Presents a visually appealing and informative landing page showcasing featured products and promotional offers.
-![Uploading Screenshot 2024-07-08 082154.png…]()
+![Screenshot 2024-07-08 082154](https://github.com/IsaLubs/TechGiants/assets/147058041/af555e55-de90-414b-b6f9-6589b736e95b)
+
 
 #### Profile page
 - Allows users to manage personal information, view order history, and update preferences.
