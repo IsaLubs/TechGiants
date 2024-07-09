@@ -127,7 +127,7 @@ Captures user-generated content including product titles, user-friendly URLs (sl
 - This wireframe was created by using Figma 
 [Figma](https://www.figma.com/design/bsltgnLz4LzVP0gCgowNvU/Tech-Giants-(Home-Newdesign)?node-id=0-1&t=ljwcdIW4LlwQluhx-0)
 [Click here to view the PDF](https://github.com/user-attachments/files/16138050/Desktop.-.1.pdf)
-()
+
 
 #### Home Page
 
