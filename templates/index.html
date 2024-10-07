@@ -2,8 +2,7 @@
 {% load static %}
 {% load category_template_tags %}
 {% load slide_template_tags %}
-{% block content %}
-<style>
+{% block extra_css %} 
 
 .block2-labelpromotion::before,
 .block2-labelsale::before,
@@ -158,11 +157,8 @@
 }
 
 
-</style>
-
-
-	
-
+{% endblock extra_css %}
+{% block content %}
 
     <section>
         <div class="pos-relative">
