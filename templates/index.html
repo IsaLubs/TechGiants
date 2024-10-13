@@ -2,7 +2,9 @@
 {% load static %}
 {% load category_template_tags %}
 {% load slide_template_tags %}
-{% block css %}
+{% block content %}
+<style>
+
 .block2-labelpromotion::before,
 .block2-labelsale::before,
 .block2-labelnew::before 
@@ -84,7 +86,7 @@
 	overflow: hidden;
 }
 .block2-img img {
-	height: 320px;
+	height: 370px;
 	width: 100%;
 	object-fit: cover;
 }
@@ -155,13 +157,16 @@
 	width: 100%;
 }
 
-{% endblock css %}
 
-{% block content %}
+</style>
+
+
+	
+
 
     <section>
         <div class="pos-relative">
-            <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/12/apple-mouse-pros-and-cons.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"  alt="IMG-BANNER" class="ban_img w-100">
+            <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/12/apple-mouse-pros-and-cons.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"  alt="IMG-BANNER" class="ban_img">
             
             <div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
                 <br><br><br><br><br>
@@ -184,16 +189,15 @@
                     
 
             </div>
-
         </div>
     </section>
 
-    <section style="background-color: white;">
+    <section class="p-2">
 		<div class="">
 			<div class="row">
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15" style="padding: 3%;">
 					<div class="pos-relative" >
-						<img src="	https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/27357283304265.5d3840b368e45.jpg" alt="IMG-BANNER" class="ban_img rounded-4 w-100">
+						<img src="	https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/27357283304265.5d3840b368e45.jpg" alt="IMG-BANNER" class="ban_img rounded-3">
 
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
@@ -216,7 +220,7 @@
 
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
 					<div class="pos-relative" style="padding-top: 30%; padding-left: 10%;">
-						<h2 style="color: black;">
+						<h2>
                             Discover Incredible Savings on the Latest Smartphones – Your Dream Phone is Just a Click Away!
                         </h2>
 					</div>
@@ -226,7 +230,7 @@
 	</section>
 
 
-    <section style="background-color: antiquewhite;">
+    <section style="background-color: antiquewhite;" class="p-2">
 		<div class="">
 			<div class="row">
                 <div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15">
@@ -238,9 +242,9 @@
 				</div>
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15" style="padding: 3%;">
 					<div class="pos-relative" >
-						<img src="https://thumbs.dreamstime.com/b/sale-23424352.jpg" alt="IMG-BANNER" class="ban_img rounded-4 w-100">
+						<img src="https://thumbs.dreamstime.com/b/sale-23424352.jpg" alt="IMG-BANNER" class="ban_img rounded-3">
 
-						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15" style="height:225px;">
+						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
 							<br><br><br><br><br>
 							<span class="m-text9 p-t-45 fs-20-sm">
@@ -266,9 +270,9 @@
 
 
 
-    <section class="newproduct bgwhite p-t-45 p-b-105">
+    <section class="newproduct bgwhite p-t-45 p-b-105 p-2 mb-4">
         <div class="container">
-            <div class="sec-title p-b-60">
+            <div class="sec-title p-b-60 pt-4">
                 <h3 class="m-text5 t-center">
                     Featured Products
                 </h3>
@@ -280,7 +284,7 @@
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-label">
 									<a href="product/apple-iphone-15-128gb/">
-										<img src="https://xmobile.lk/wp-content/uploads/2023/09/Apple-iPhone-15-4.png" class="w-100" style="height: 300px;" alt="IMG-PRODUCT">
+										<img src="https://xmobile.lk/wp-content/uploads/2023/09/Apple-iPhone-15-4.png" alt="IMG-PRODUCT" style="height:300px; object-fit:contain;">
 									</a>
 								</div>
 								<div class="block2-txt p-t-20">
@@ -300,7 +304,7 @@
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-label">
 									<a href="product/apple-iphone-14/">
-										<img src="https://sumerlabs.com/sumer-app-90b8f.appspot.com/product_photos%2Fc694c8d35066c07d4b29662e5acf3078%2Fe1d836a0-c1b8-11ed-a619-6d01b9f4300b?alt=media&token=b2fdfb8f-4a46-439c-8826-30c6e28bab8a"  class='w-100'  style="height: 300px;"  alt="IMG-PRODUCT">
+										<img src="https://sumerlabs.com/sumer-app-90b8f.appspot.com/product_photos%2Fc694c8d35066c07d4b29662e5acf3078%2Fe1d836a0-c1b8-11ed-a619-6d01b9f4300b?alt=media&token=b2fdfb8f-4a46-439c-8826-30c6e28bab8a" alt="IMG-PRODUCT" style="height:300px; object-fit:contain;">
 									</a>
 								</div>
 								<div class="block2-txt p-t-20">
@@ -320,7 +324,7 @@
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-label">
 									<a href="product/apple-iphone-14-pro/">
-										<img src="https://9to5mac.com/wp-content/uploads/sites/6/2022/09/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-space-black-220907_inline.jpg.medium_2x.jpg?quality=82&strip=all" class='w-100'  style="height: 300px;" alt="IMG-PRODUCT">
+										<img src="https://9to5mac.com/wp-content/uploads/sites/6/2022/09/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-space-black-220907_inline.jpg.medium_2x.jpg?quality=82&strip=all" alt="IMG-PRODUCT" style="height:300px; object-fit:contain;">
 									</a>
 								</div>
 								<div class="block2-txt p-t-20">
@@ -337,7 +341,7 @@
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-label">
 									<a href="product/samsung-s-24-ultra/">
-										<img src="https://ee.co.uk/medias/samsung-galaxy-s24-ultra-5g-256gb-titanium-grey-desktop-detail-3-WebP-Format-488?context=bWFzdGVyfHJvb3R8Njc4NHxpbWFnZS93ZWJwfHN5cy1tYXN0ZXIvcm9vdC9oNTIvaDAwLzEwMTI1MTIwMDEyMzE4L3NhbXN1bmctZ2FsYXh5LXMyNC11bHRyYS01Zy0yNTZnYi10aXRhbml1bS1ncmV5LWRlc2t0b3AtZGV0YWlsLTNfV2ViUC1Gb3JtYXQtNDg4fDQ5Y2MzM2M2ZGRlNzFlOTMxMzE3OWFlNjFlZTVhYzQ2ZWEwZGZjZGE0YjUyOGYyMzc1MWI3NWQ5YzM5NTc2OGE" class='w-100'  style="height: 300px;" alt="IMG-PRODUCT">
+										<img src="https://ee.co.uk/medias/samsung-galaxy-s24-ultra-5g-256gb-titanium-grey-desktop-detail-3-WebP-Format-488?context=bWFzdGVyfHJvb3R8Njc4NHxpbWFnZS93ZWJwfHN5cy1tYXN0ZXIvcm9vdC9oNTIvaDAwLzEwMTI1MTIwMDEyMzE4L3NhbXN1bmctZ2FsYXh5LXMyNC11bHRyYS01Zy0yNTZnYi10aXRhbml1bS1ncmV5LWRlc2t0b3AtZGV0YWlsLTNfV2ViUC1Gb3JtYXQtNDg4fDQ5Y2MzM2M2ZGRlNzFlOTMxMzE3OWFlNjFlZTVhYzQ2ZWEwZGZjZGE0YjUyOGYyMzc1MWI3NWQ5YzM5NTc2OGE" alt="IMG-PRODUCT" style="height:300px; object-fit:contain;">
 									</a>
 								</div>
 								<div class="block2-txt p-t-20">
@@ -354,7 +358,7 @@
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-label">
 									<a href="product/google-pixel-8-pro/">
-										<img src="https://celltronics.lk/wp-content/uploads/2023/10/Google-Pixel-8-Pro-2.jpg" class='w-100'  style="height: 300px;" alt="IMG-PRODUCT">
+										<img src="https://celltronics.lk/wp-content/uploads/2023/10/Google-Pixel-8-Pro-2.jpg" alt="IMG-PRODUCT" style="height:300px; object-fit:contain;">
 									</a>
 								</div>
 								<div class="block2-txt p-t-20">
