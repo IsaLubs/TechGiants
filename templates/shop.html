@@ -1,9 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load category_template_tags %}
-{% block content %}
-<style type="text/css">
-	.selection-2{
+{% block css %}
+.selection-2{
 	display: block;
     width: 100%;
     height: calc(1.5em + .75rem + 2px);
@@ -18,7 +17,9 @@
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	}
-</style>
+{% endblock css %}
+{% block content %}
+
 
 <!--https://static.vecteezy.com/system/resources/previews/005/454/927/non_2x/mobile-phone-represent-of-front-of-shop-store-shopping-online-on-website-or-mobile-application-concept-marketing-and-digital-marketing-free-vector.jpg-->
 	<!-- Title Page -->

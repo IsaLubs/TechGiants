@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load category_template_tags %}
-{% block content %}
-<style type="text/css">
-	.selection-2{
+{% block css %}
+
+{% endblock css %}
+.selection-2{
 	display: block;
     width: 100%;
     height: calc(1.5em + .75rem + 2px);
@@ -18,7 +19,7 @@
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	}
-</style>
+{% block content %}
 
 	<!-- Title Page -->
 	<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(/media/{{category_image}});">
