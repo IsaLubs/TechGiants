@@ -137,11 +137,11 @@
 				
 					{% if request.user.is_authenticated %}
 					<li class="nav-item pe-3 ps-3">
-						<a class="btn btn-dark" href="{% url 'account_logout' %}">Logout</a>
+						<a class="btn btn-dark pe-4 ps-4" href="{% url 'account_logout' %}" style="font-size: x-small;">Logout</a>
 					</li>
 					{% else %}
 					<div class="dropdown ms-4">
-						<a class="btn btn-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<a class="btn btn-dark pe-4 ps-4"  style="font-size: x-small;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Login
 						</a>
 						<ul class="dropdown-menu" style="left: -100px;">
