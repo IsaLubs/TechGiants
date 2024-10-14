@@ -16,7 +16,7 @@
 	</div>
 	</div>
 	
-	<nav class="navbar navbar-expand-lg bg-light pt-3 pb-3 sticky-top" >
+	<nav class="navbar navbar-expand-lg bg-light pt-3 pb-3 sticky-top ps-2 pe-2" >
 		<div class="container">
 			<a class="navbar-brand" style="font-weight: bold;" href="/">Tech Giants</a>
 			<div class="d-flex align-items-center ">
@@ -105,7 +105,7 @@
 						<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							<i class="fa fa-search"></i>
 						</a>
-						<ul class="dropdown-menu dropdown-menu-end p-3 shadow-sm" style="width: 300px; border-radius: 8px;">
+						<div class="dropdown-menu dropdown-menu-end p-3 shadow-sm" style="width: 300px; border-radius: 8px;">
 							<form method="GET" action="{% url 'core:search' %}">
 								<div class="mb-3">
 									<input type="text" class="form-control form-control-sm pt-3 pb-3" name="q"
@@ -113,7 +113,7 @@
 								</div>
 								<button class="btn btn-dark w-100" type="submit" style="border-radius: 20px;">Search</button>
 							</form>
-						</ul>
+						</div>
 					</div>
 				
 					<a href="#" class="icon-link mr-3 text-dark ms-3 me-3">

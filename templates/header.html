@@ -100,10 +100,12 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  {% comment %} <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"> {% endcomment %}
+  {% comment %} <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"> {% endcomment %}
+  {% comment %} <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"> {% endcomment %}
 
   {% block linkage %}{% endblock linkage %}
   <style>
@@ -144,15 +146,127 @@ text-decoration: none;
 		text-decoration: none;
 		/* Underline when hovered */
 	}
+  .description {
+    margin: 20px 0;
+    text-align: justify;
+  }
+  
+  .review-form {
+    margin: 20px 0;
+  }
+  .review-form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .review-form button:hover {
+    background-color: #0056b3;
+  }
+  .form-control {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+  
+  .form-control:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  textarea.form-control {
+    resize: vertical;
+  }
+  
+  .star-rating .fa-star {
+    font-size: 2em;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .star-rating .fa-star.checked {
+    color: orange;
+  }
+  /* Footer Styles */
+    #footer-main {
+        background: #000;
+        color: white;
+        font-size: 14px;
+        padding: 40px 0;
+    }
+    
+    #footer-main a {
+        color: grey;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    #footer-main a:hover {
+        color: white;
+    }
+    
+    #footer-main h5 {
+        font-weight: bold;
+        color: white;
+        margin-bottom: 20px;
+    }
+    
+    #footer-main h6 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    #footer-main hr {
+        border-top: 1px solid white;
+        margin: 20px 0;
+    }
+    
+    .social-icons a {
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+        transition: color 0.3s;
+    }
+    
+    .social-icons a:hover {
+        color: #1e90ff; /* Change to your preferred hover color */
+    }
+    
+    .footer-links {
+        margin-top: 10px;
+    }
+    
+    .footer-links a {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .footer-info {
+        color: grey;
+    }
+    
+    .footer-info p {
+        margin-bottom: 10px;
+    }
+    #id_remember{
+      background-color:#a1a1a1;
+    }
   @media (max-width: 992px) {
   .tech-res{
     background-color: antiquewhite;
     border-radius: 10px;
+    
   }
   .t-ex_re{
     display: block !important;
   }
-  {% block css %}{% endblock css %}
 }
+{% block css %}{% endblock css %}
   </style>
 </head>

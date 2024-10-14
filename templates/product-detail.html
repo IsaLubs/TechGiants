@@ -1,5 +1,14 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block css %}
+h4 {
+	border-bottom: 2px solid #f1f1f1;
+	padding-bottom: 10px;
+	color: #000a38;
+}
+
+{% endblock css %}
 {% block content %}
 
 	<!-- breadcrumb -->
@@ -99,85 +108,12 @@
 	</div>
 
 	<section>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-		<style>
-			h2 {
-				border-bottom: 2px solid #f1f1f1;
-				padding-bottom: 10px;
-				color: #007BFF;
-			}
-			h4 {
-				border-bottom: 2px solid #f1f1f1;
-				padding-bottom: 10px;
-				color: #000a38;
-			}
-			.description {
-				margin: 20px 0;
-				text-align: justify;
-			}
-			.reviews {
-				margin: 20px 0;
-			}
-			.review {
-				border-bottom: 1px solid #f1f1f1;
-				padding: 10px 0;
-			}
-			.review p {
-				margin: 5px 0;
-			}
-			.review strong {
-				color: #007BFF;
-			}
-			.review small {
-				color: #999;
-			}
-			.review-form {
-				margin: 20px 0;
-			}
-			.review-form button {
-				background-color: #007BFF;
-				color: #fff;
-				border: none;
-				padding: 10px 20px;
-				cursor: pointer;
-				border-radius: 5px;
-			}
-			.review-form button:hover {
-				background-color: #0056b3;
-			}
-			.form-control {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0 15px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-			}
-
-			.form-control:focus {
-				border-color: #4CAF50;
-				outline: none;
-			}
-
-			textarea.form-control {
-				resize: vertical;
-			}
-
-			.star-rating .fa-star {
-				font-size: 2em;
-				color: gray;
-				cursor: pointer;
-			}
-
-			.star-rating .fa-star.checked {
-				color: orange;
-			}
-		</style>
-
+		
 		<div class="container">
 			<div style="margin-top: -5%;">
-				<h2>Description</h2>
+				<h2 style="border-bottom: 2px solid #f1f1f1;
+				padding-bottom: 10px;
+				color: #007BFF;">Description</h2>
 				<div class="description">
 					<p style="color: black;">
 						{{ object.description_long|safe }}
@@ -186,22 +122,23 @@
 			</div>
 
 			<h2 style="margin-top: 10%;">Reviews</h2>
-			<div class="reviews">
+			<div class="reviews" style="margin: 20px 0; ">
 				{% for review in reviews %}
-					<div class="review">
+					<div class="review" style="border-bottom: 1px solid #f1f1f1;
+				padding: 10px 0;">
 						{% if review.rating == 5 %}
-							<p style="color: #000000;"><strong>{{ review.user.username }}</strong> rated it ★★★★★</p>
+							<p style="color: #000000; margin: 5px 0;"><strong style="color: #007BFF;">{{ review.user.username }}</strong> rated it ★★★★★</p>
 						{% elif review.rating == 4 %}
-							<p style="color: #000000;"><strong>{{ review.user.username }}</strong> rated it ★★★★☆</p>
+							<p style="color: #000000; margin: 5px 0;"><strong style="color: #007BFF;">{{ review.user.username }}</strong> rated it ★★★★☆</p>
 						{% elif review.rating == 3 %}
-							<p style="color: #000000;"><strong>{{ review.user.username }}</strong> rated it ★★★☆☆</p>
+							<p style="color: #000000; margin: 5px 0;"><strong style="color: #007BFF;">{{ review.user.username }}</strong> rated it ★★★☆☆</p>
 						{% elif review.rating == 2 %}
-							<p style="color: #000000;"><strong>{{ review.user.username }}</strong> rated it ★★☆☆☆</p>
+							<p style="color: #000000; margin: 5px 0;"><strong style="color: #007BFF;">{{ review.user.username }}</strong> rated it ★★☆☆☆</p>
 						{% elif review.rating == 1 %}
-							<p style="color: #000000;"><strong>{{ review.user.username }}</strong> rated it ★☆☆☆☆</p>
+							<p style="color: #000000; margin: 5px 0;"><strong style="color: #007BFF;">{{ review.user.username }}</strong> rated it ★☆☆☆☆</p>
 						{% endif %}
 						<p style="color: #000000;">{{ review.comment }}</p>
-						<p><small>Posted on {{ review.created_at }}</small></p>
+						<p><small style="color: #999;">Posted on {{ review.created_at }}</small></p>
 						{% if review.user == request.user %}
 						<div>
                     		<form method="post" action="{% url 'core:delete-review' review.pk %}">

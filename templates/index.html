@@ -2,8 +2,7 @@
 {% load static %}
 {% load category_template_tags %}
 {% load slide_template_tags %}
-{% block content %}
-<style>
+{% block css %}
 
 .block2-labelpromotion::before,
 .block2-labelsale::before,
@@ -157,47 +156,45 @@
 	width: 100%;
 }
 
+.ex_h{
+	height:80vh;
+  
+}
 
-</style>
+{% endblock css %}
+{% block content %}
 
-
+	<section class="position-relative" style="height: 80vh;">
+		<div class="container-fluid h-100">
+			<div class="row h-100">
+				<div class="col-12 p-0">
+					<!-- Banner Image with 80vh height -->
+					<img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/12/apple-mouse-pros-and-cons.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5" 
+						 alt="IMG-BANNER" 
+						 class="img-fluid w-100" style="height: 80vh; object-fit: cover;">
 	
-
-
-    <section>
-        <div class="pos-relative">
-            <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/12/apple-mouse-pros-and-cons.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5"  alt="IMG-BANNER" class="ban_img">
-            
-            <div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
-                <br><br><br><br><br>
-				<br><br><br><br><br>
-				<span class="m-text9 p-t-45 fs-20-sm" style="margin-bottom: 15%;">
-					<h2> New Online Shop experience.<br></h2>
-					<br><br>
-					<h4>Discover Incredible Savings on the<br> 
-					Latest Smartphones – Your Dream Phone is Just a Click Away!<br>
-					</h4>
-				</span>
-				
-                <br>
-
-                    <div class="wrap-btn-slide1 w-size1 animated" data-appear="slideInUp">
-            
-                <a href="/shop/" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite  trans-0-4" style="margin-bottom: 200%;">
-                    Shop Now
-                </a>
-                    
-
-            </div>
-        </div>
-    </section>
-
+					<!-- Text Overlay -->
+					<div class="position-absolute top-50 start-50 translate-middle text-center text-light" style="width: 100%;">
+						<h2 style="font-size: 5vw; font-weight: 300;">New Online Shop Experience</h2>
+						<h4 class="mt-4" style="font-size: 2.5vw; font-weight: 300;">Discover Incredible Savings on the<br> 
+							Latest Smartphones – Your Dream Phone is Just a Click Away!
+						</h4>
+	
+						<!-- Shop Now Button -->
+						<a href="/shop/" class="btn btn-outline-light btn-lg mt-5">Shop Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
     <section class="p-2">
 		<div class="">
 			<div class="row">
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15" style="padding: 3%;">
 					<div class="pos-relative" >
-						<img src="	https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/27357283304265.5d3840b368e45.jpg" alt="IMG-BANNER" class="ban_img rounded-3">
+						<img src="	https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/27357283304265.5d3840b368e45.jpg" alt="IMG-BANNER" class="ban_img rounded-3 w-100">
 
 						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
 							<br><br><br><br><br>
@@ -241,12 +238,11 @@
 					</div>
 				</div>
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto p-t-15 p-b-15" style="padding: 3%;">
-					<div class="pos-relative" >
-						<img src="https://thumbs.dreamstime.com/b/sale-23424352.jpg" alt="IMG-BANNER" class="ban_img rounded-3">
+					<div class="pos-relative " >
+						<img src="https://thumbs.dreamstime.com/b/sale-23424352.jpg" alt="IMG-BANNER" class="ban_img rounded-3 w-100">
 
-						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15">
-							<br><br><br><br><br>
-							<br><br><br><br><br>
+						<div class="ab-t-l sizefull flex-col-c-m p-l-15 p-r-15 d-flex ">
+						
 							<span class="m-text9 p-t-45 fs-20-sm">
 								Bold, Brights Looks
 							</span>
@@ -340,6 +336,23 @@
 						<div class="item-slick2 p-l-15 p-r-15">
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-label">
+									<a href="product/apple-iphone-14-pro/">
+										<img src="https://9to5mac.com/wp-content/uploads/sites/6/2022/09/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-space-black-220907_inline.jpg.medium_2x.jpg?quality=82&strip=all" alt="IMG-PRODUCT" style="height:300px; object-fit:contain;">
+									</a>
+								</div>
+								<div class="block2-txt p-t-20">
+									<a href="product/apple-iphone-14-pro/" class="block2-name dis-block s-text3 p-b-5">
+										Apple Iphone 14 Pro
+									</a>
+									<span class="block2-newprice m-text8 p-r-5">
+										$1519.50
+									</span>
+								</div>
+							</div>
+						</div>
+						{% comment %} <div class="item-slick2 p-l-15 p-r-15">
+							<div class="block2">
+								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-label">
 									<a href="product/samsung-s-24-ultra/">
 										<img src="https://ee.co.uk/medias/samsung-galaxy-s24-ultra-5g-256gb-titanium-grey-desktop-detail-3-WebP-Format-488?context=bWFzdGVyfHJvb3R8Njc4NHxpbWFnZS93ZWJwfHN5cy1tYXN0ZXIvcm9vdC9oNTIvaDAwLzEwMTI1MTIwMDEyMzE4L3NhbXN1bmctZ2FsYXh5LXMyNC11bHRyYS01Zy0yNTZnYi10aXRhbml1bS1ncmV5LWRlc2t0b3AtZGV0YWlsLTNfV2ViUC1Gb3JtYXQtNDg4fDQ5Y2MzM2M2ZGRlNzFlOTMxMzE3OWFlNjFlZTVhYzQ2ZWEwZGZjZGE0YjUyOGYyMzc1MWI3NWQ5YzM5NTc2OGE" alt="IMG-PRODUCT" style="height:300px; object-fit:contain;">
 									</a>
@@ -353,7 +366,7 @@
 									</span>
 								</div>
 							</div>
-						</div>
+						</div> {% endcomment %}
 						<div class="item-slick2 p-l-15 p-r-15">
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-label">
@@ -460,7 +473,7 @@
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	
 			<!-- Custom JS to trigger modal -->
-			<script type="text/javascript">
+			<script>
 				$(document).ready(function() {
 					$('#newsletterForm').submit(function(event) {
 						event.preventDefault(); // Prevent form from submitting normally
