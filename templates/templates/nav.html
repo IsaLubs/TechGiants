@@ -24,7 +24,7 @@
 				<div class="t-ex_re">
 					
 					{% if request.user.is_authenticated %}
-					<li class="nav-item pe-3 ps-3">
+					<li class="nav-item pe-1">
 						<a class="btn btn-dark" href="/accounts/logout/">Logout</a>
 					</li>
 					{% else %}
@@ -42,7 +42,7 @@
 					</div>
 					{% endif %}
 				</div>
-				<div class="t-ex_re me-2 ">
+				<div class="t-ex_re me-2 " style="padding-bottom: 5px;">
 					{% if request.user.is_authenticated %}
 					<a href="{% url 'core:order-summary' %}" class="position-relative text-dark ms-3 me-3 mb-4">
 						<i class="fa fa-shopping-cart"></i>
