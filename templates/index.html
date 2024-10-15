@@ -460,7 +460,7 @@
 							Thank you for signing up! You have successfully subscribed to our newsletter.
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal" id="cls-lk">Close</button>
 						</div>
 					</div>
 				</div>
@@ -481,6 +481,11 @@
 						// Assuming it was successful, show the success modal
 						$('#successModal').modal('show');
 					});
+
+					$('#cls-lk').click(function(event) {
+						$('#successModal').modal('hide');
+					});
+
 				});
 			</script>
 		</div>
