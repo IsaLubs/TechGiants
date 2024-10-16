@@ -160,7 +160,8 @@ Captures user-generated content including product titles, user-friendly URLs (sl
 
 #### Home
 - Presents a visually appealing and informative landing page showcasing featured products and promotional offers.
-![Screenshot 2024-07-08 082154](https://github.com/IsaLubs/TechGiants/assets/147058041/af555e55-de90-414b-b6f9-6589b736e95b)
+![Screenshot 2024-10-16 093632](https://github.com/user-attachments/assets/32ff24e5-03de-4bb5-908e-9e9af0dcb3d7)
+
 
 #### Social Media Links.
 - Every page throughout the project has a footer with social media links.
