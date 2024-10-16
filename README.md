@@ -183,7 +183,8 @@ Captures user-generated content including product titles, user-friendly URLs (sl
 
 #### Search
 - Facilitates easy navigation through a robust search functionality that retrieves relevant products based on user queries.
-![Screenshot 2024-07-08 081911](https://github.com/IsaLubs/TechGiants/assets/147058041/c8a490cb-fa5b-4aff-8046-a2b722ff61f4)
+![Screenshot 2024-10-16 052115](https://github.com/user-attachments/assets/9df977eb-12fd-4900-9fd4-39e3746153b8)
+
 
 #### Nav bar
 - Provides intuitive navigation with a responsive navbar that adapts seamlessly across different device sizes.
