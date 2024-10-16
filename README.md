@@ -143,11 +143,13 @@ Captures user-generated content including product titles, user-friendly URLs (sl
 
 #### SignIn Page
 
-![Screenshot 2024-07-07 004226](https://github.com/IsaLubs/TechGiants/assets/147058041/98d412e0-2b44-4ed0-a3f0-9aa8bc0c55b1)
+![Screenshot 2024-10-15 202656](https://github.com/user-attachments/assets/b93f8f79-e262-4917-b611-2f37ded4e387)
+
 
 #### SignUp Page
 
-![Screenshot 2024-07-07 004238](https://github.com/IsaLubs/TechGiants/assets/147058041/91e2890b-abe3-4442-9390-913e663595e1)
+![Screenshot 2024-10-15 202830](https://github.com/user-attachments/assets/2b38998f-dae3-4fd1-a034-8bf7c1c0be0d)
+
 
 #### ContactUs Page  
 
