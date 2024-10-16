@@ -188,7 +188,8 @@ Captures user-generated content including product titles, user-friendly URLs (sl
 
 #### Nav bar
 - Provides intuitive navigation with a responsive navbar that adapts seamlessly across different device sizes.
-![Screenshot 2024-07-08 081712](https://github.com/IsaLubs/TechGiants/assets/147058041/6a05000d-1ccf-4b66-a6d1-ee63294cb215)
+![Screenshot 2024-10-16 093214](https://github.com/user-attachments/assets/6645017a-22b3-42a9-aff7-ea75cafb4d38)
+
 
 #### Post detail
 - Displays comprehensive product details including specifications, pricing, and customer reviews for informed purchasing decisions.
