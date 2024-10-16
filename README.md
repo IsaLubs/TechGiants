@@ -325,7 +325,8 @@ This included:
 - iPad Air and Mini
 - Galaxy Fold
 - Nest Hub and Hub Max
-  
+  ![Screenshot 2024-10-16 092342](https://github.com/user-attachments/assets/330d64d8-6565-42ca-8968-51b103e57fbe)
+
 I also opted to use the responsiveness option and checked the screens at the following width sizes:
 
 - 350px
