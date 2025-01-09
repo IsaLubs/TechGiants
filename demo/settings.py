@@ -3,11 +3,14 @@ import django
 from django.utils.encoding import force_str
 from pathlib import Path
 from decouple import Config, Csv
+from decouple import RepositoryEnv
+
+
 django.utils.encoding.force_text = force_str
 
 
 ENVIRONMENT = os.getenv('ENVIRONMENT', 'development') 
-config = Config()
+config = Config(repository=RepositoryEnv())
 
 SECRET_KEY = config('SECRET_KEY') 
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(_file_)))
