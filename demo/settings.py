@@ -2,16 +2,20 @@ import os
 import django
 from django.utils.encoding import force_str
 from pathlib import Path
-
+from decouple import Config, RepositoryEnv
 django.utils.encoding.force_text = force_str
 
+
 ENVIRONMENT = os.getenv('ENVIRONMENT', 'development') 
+SECRET_KEY = os.getenv('SECRET_KEY')  
+BASE_DIR = Path(_file_).resolve().parent.parent
+config = Config(RepositoryEnv(os.path.join(BASE_DIR, '.env')))
 
-SECRET_KEY = os.getenv('SECRET_KEY', 'default-secret-key')
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = False
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(_file_)))
+BASE_DIR = Path(_file_).resolve().parent.parent
+SECRET_KEY = config('SECRET_KEY')
 ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com']
 
 INSTALLED_APPS = [
@@ -74,6 +78,7 @@ TEMPLATES = [
     },
 ]
 
+
 CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_IMAGE_BACKEND = "pillow"
 
@@ -129,20 +134,39 @@ CKEDITOR_5_CONFIGS = {
             "blockQuote",
         ],
         "toolbar": [
+            # "heading",
+            # "|",
+            
+            # "|",
             "bold",
             "italic",
+            # "link",
             "underline",
             "strikethrough",
             "code",
+            # "subscript",
+            # "superscript",
             "highlight",
             "|",
             "bulletedList",
+            # "codeBlock",
+            # "numberedList",
+            # "todoList",
+            # "|",
             "outdent",
             "indent",
+            # "|",
             "blockQuote",
             "insertImage",
+            # "|",
+            "fontSize",
+            # "fontFamily",
+            "fontColor",
+            "fontBackgroundColor",
+            # "mediaEmbed",
             "removeFormat",
             "insertTable",
+            # "sourceEditing",
         ],
         "image": {
             "toolbar": [
@@ -154,6 +178,7 @@ CKEDITOR_5_CONFIGS = {
                 "imageStyle:side",
                 "|",
                 "toggleImageCaption",
+                "|"
             ],
             "styles": [
                 "full",
@@ -180,6 +205,45 @@ CKEDITOR_5_CONFIGS = {
                 "backgroundColors": customColorPalette,
             },
         },
+        "heading": {
+            "options": [
+                {
+                    "model": "paragraph",
+                    "title": "Paragraph",
+                    "class": "ck-heading_paragraph",
+                },
+                {
+                    "model": "heading1",
+                    "view": "h1",
+                    "title": "Heading 1",
+                    "class": "ck-heading_heading1",
+                },
+                {
+                    "model": "heading2",
+                    "view": "h2",
+                    "title": "Heading 2",
+                    "class": "ck-heading_heading2",
+                },
+                {
+                    "model": "heading3",
+                    "view": "h3",
+                    "title": "Heading 3",
+                    "class": "ck-heading_heading3",
+                },
+            ]
+        },
+        "list": {
+            "properties": {
+                "styles": True,
+                "startIndex": True,
+                "reversed": True,
+            }
+        },
+        "htmlSupport": {
+            "allow": [
+                {"name": "/.*/", "attributes": True, "classes": True, "styles": True}
+            ]
+        },
     },
 }
 
@@ -190,35 +254,17 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-# Static files (CSS, JS, images)
+# static files (CSS, JS, Image)
 STATIC_URL = '/static/'
-
-STATICFILES_FINDERS = [
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'django.contrib.staticfiles.finders.DefaultStorageFinder',  # Add this to force static file collection
-]
-# Heroku-specific paths for static files
-if os.getenv('ENVIRONMENT') == 'production':
-    STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static_root'),  # Path to your static_root folder
-    ]
-    STATIC_ROOT = '/app/staticfiles/'  # Directory where collected static files will be stored on Heroku
-else:
-    STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static_root'),
-        os.path.join(BASE_DIR, 'static_in_env'),  # Optional, only if you have a 'static_in_env' folder
-    ]
-    STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-# Media files (uploads)
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_in_env')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
 
-# For Heroku, use WhiteNoise for static file handling
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-WHITENOISE_SKIP_COMPRESS = True
-WHITENOISE_USE_FINDERS = True
+
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# WHITENOISE_USE_FINDERS = True
+
 
 DATABASES = {
     "default": {
