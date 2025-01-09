@@ -18,7 +18,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(_file_)))
 BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = config('SECRET_KEY')
 ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com']
 
 INSTALLED_APPS = [
