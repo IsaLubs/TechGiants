@@ -193,6 +193,11 @@ USE_TZ = True
 # Static files (CSS, JS, images)
 STATIC_URL = '/static/'
 
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'django.contrib.staticfiles.finders.DefaultStorageFinder',  # Add this to force static file collection
+]
 # Heroku-specific paths for static files
 if os.getenv('ENVIRONMENT') == 'production':
     STATICFILES_DIRS = [
