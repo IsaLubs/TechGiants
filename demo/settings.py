@@ -2,15 +2,22 @@ import os
 import django
 from django.utils.encoding import force_str
 from pathlib import Path
+from decouple import Config, RepositoryEnv
 django.utils.encoding.force_text = force_str
 
 
-#ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')
+ENVIRONMENT = os.getenv('ENVIRONMENT', 'development') 
+SECRET_KEY = os.getenv('SECRET_KEY')  
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(_file_)))
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+config = Config(RepositoryEnv(os.path.join(BASE_DIR, '.env')))
+
 
 DEBUG = False
-#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(_file_)))
 BASE_DIR = Path(__file__).resolve().parent.parent
-SECRET_KEY = '-05sgp9!deq=q1nltm@^^2cc+v29i(tyybv3v2t77qi66czazj'
+SECRET_KEY = config('SECRET_KEY')
 ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com']
 
 INSTALLED_APPS = [
@@ -292,8 +299,8 @@ LOGIN_REDIRECT_URL = '/'
 # Provider specific settings
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
-        # For each OAuth based provider, either add a ``SocialApp``
-        # (``socialaccount`` app) containing the required client
+        # For each OAuth based provider, either add a `SocialApp`
+        # (`socialaccount` app) containing the required client
         # credentials, or list them here:
         'APP': {
             'client_id': '123',

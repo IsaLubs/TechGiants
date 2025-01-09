@@ -122,36 +122,46 @@ h4 {
 			</div>
 
 			<h2 style="margin-top: 10%;">Reviews</h2>
-			<div class="reviews" style="margin: 20px 0; ">
+			<div class="reviews" style="margin: 20px 0;">
 				{% for review in reviews %}
-					<div class="review" style="border-bottom: 1px solid #f1f1f1;
-				padding: 10px 0;">
-						{% if review.rating == 5 %}
-							<p style="color: #000000; margin: 5px 0;"><strong style="color: #007BFF;">{{ review.user.username }}</strong> rated it ★★★★★</p>
-						{% elif review.rating == 4 %}
-							<p style="color: #000000; margin: 5px 0;"><strong style="color: #007BFF;">{{ review.user.username }}</strong> rated it ★★★★☆</p>
-						{% elif review.rating == 3 %}
-							<p style="color: #000000; margin: 5px 0;"><strong style="color: #007BFF;">{{ review.user.username }}</strong> rated it ★★★☆☆</p>
-						{% elif review.rating == 2 %}
-							<p style="color: #000000; margin: 5px 0;"><strong style="color: #007BFF;">{{ review.user.username }}</strong> rated it ★★☆☆☆</p>
-						{% elif review.rating == 1 %}
-							<p style="color: #000000; margin: 5px 0;"><strong style="color: #007BFF;">{{ review.user.username }}</strong> rated it ★☆☆☆☆</p>
-						{% endif %}
+					<div class="review" style="border-bottom: 1px solid #f1f1f1; padding: 10px 0;">
+						<div style="display: flex; justify-content: space-between; align-items: center;">
+						<p style="color: #000000; margin: 5px 0;">
+								<strong style="color: #007BFF;">{{ review.user.username }}</strong>
+								{% if review.rating == 5 %}
+									rated it ★★★★★
+								{% elif review.rating == 4 %}
+									rated it ★★★★☆
+								{% elif review.rating == 3 %}
+									rated it ★★★☆☆
+								{% elif review.rating == 2 %}
+									rated it ★★☆☆☆
+								{% elif review.rating == 1 %}
+									rated it ★☆☆☆☆
+								{% endif %}
+							</p>
+			
+							{% if review.user == request.user %}
+								<div style="display: flex; gap: 10px;">
+									<form method="post" action="{% url 'core:delete-review' review.pk %}" style="margin: 0;">
+										{% csrf_token %}
+										<button type="submit" class="btn btn-sm" style="background: none; border: none;" title="Delete">
+											<i class="fa fa-trash"></i>
+										</button>
+									</form>
+									<a href="{% url 'core:edit-review' review.pk %}" class="btn btn-sm" style="background: none; border: none;" title="Edit">
+										<i class="fa fa-edit"></i>
+									</a>
+								</div>
+							{% endif %}
+						</div>
+						
 						<p style="color: #000000;">{{ review.comment }}</p>
 						<p><small style="color: #999;">Posted on {{ review.created_at }}</small></p>
-						{% if review.user == request.user %}
-						<div>
-                    		<form method="post" action="{% url 'core:delete-review' review.pk %}">
-                        		{% csrf_token %}
-                        		<button type="submit" class="btn btn-danger btn-sm">Delete</button>
-								<a href="{% url 'core:edit-review' review.pk %}" class="btn btn-warning btn-sm">Edit</a>
-                   			</form>
-							
-						</div>
-                		{% endif %}
 					</div>
 				{% endfor %}
 			</div>
+			
 
 			<h5>Leave a Review</h5>
 			<div class="container">
@@ -256,3 +266,4 @@ h4 {
 	<div id="dropDownSelect2"></div>
 
 	{% endblock content %}
+	
