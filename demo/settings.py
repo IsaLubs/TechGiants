@@ -203,7 +203,7 @@ if os.getenv('ENVIRONMENT') == 'production':
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static_root'),  # Path to your static_root folder
     ]
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Directory where collected static files will be stored on Heroku
+    STATIC_ROOT = '/app/staticfiles/'  # Directory where collected static files will be stored on Heroku
 else:
     STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static_root'),
