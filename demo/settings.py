@@ -258,7 +258,10 @@ USE_TZ = True
 
 # static files (CSS, JS, Image)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_in_env')]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static/vendor/jqueryui'),
+]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
@@ -267,7 +270,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 WHITENOISE_SKIP_COMPRESS = True
 WHITENOISE_USE_FINDERS = True
-
 
 DATABASES = {
     "default": {
