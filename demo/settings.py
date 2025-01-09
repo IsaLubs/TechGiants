@@ -8,13 +8,13 @@ django.utils.encoding.force_text = force_str
 
 ENVIRONMENT = os.getenv('ENVIRONMENT', 'development') 
 SECRET_KEY = os.getenv('SECRET_KEY')  
-BASE_DIR = Path(_file_).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 config = Config(RepositoryEnv(os.path.join(BASE_DIR, '.env')))
 
 
 DEBUG = False
 #BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(_file_)))
-BASE_DIR = Path(_file_).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com']
 
