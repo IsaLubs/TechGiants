@@ -389,6 +389,11 @@ Lighthouse is a feature of Google Chrome developer tools and is used to assess t
 1. Execute necessary project migrations by entering python3 manage.py makemigrations followed by python3 manage.py migrate in the terminal.
 2. Integrate a Procfile into the project, including the line web: gunicorn [project_name].wsgi:application.
 
+## Secret Key
+Now I have moved the sensitive key alias SECRET_KEY outside the code and used the .env from heroku. As you can see in the screenshot now we are taking it from environment variables.
+![Heroku key](https://github.com/user-attachments/assets/e1246d67-828c-4576-9914-a2d1903f6c5e)
+
+
 ## Heroku Deploy
 1. Return to Heroku and navigate to the Project’s page. Open the "Settings" tab and locate the "Config Vars" section.
 2. Within "Config Vars," input the following key-value pairs:
