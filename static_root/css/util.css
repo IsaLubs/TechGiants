@@ -2354,12 +2354,12 @@
 /*[ Wrap Picture ]
 -----------------------------------------------------------
 */
-.wrap-pic-w img {width: 100%;}
-.wrap-pic-max-w img {max-width: 100%;}
+.wrap-pic-w img {width: 100%; object-fit: cover;}
+.wrap-pic-max-w img {max-width: 100%; object-fit: cover;}
 
 /* ------------------------------------ */
-.wrap-pic-h img {height: 100%;}
-.wrap-pic-max-h img {max-height: 100%;}
+.wrap-pic-h img {height: 100%; object-fit: cover;}
+.wrap-pic-max-h img {max-height: 100%; object-fit: cover;}
 
 /* ------------------------------------ */
 .wrap-pic-cir {
@@ -4068,9 +4068,7 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 */
 @media (max-width: 992px) {
 	.p-r-0-lg {padding-right: 0;}
-.t-ex_re{
-	display: block;
-}
+
 	.respon3 {
 		width: 100%;
 	}
