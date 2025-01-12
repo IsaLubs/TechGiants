@@ -204,7 +204,8 @@ Captures user-generated content including product titles, user-friendly URLs (sl
 
 #### Delete / Edit comments
 - Allows users to manage their reviews by editing or removing.
-![Screenshot 2024-07-08 063659](https://github.com/IsaLubs/TechGiants/assets/147058041/0347440f-2c71-46db-9984-90adbe35df7f)
+
+![Screenshot 2025-01-12 180010](https://github.com/user-attachments/assets/e45fea5c-28a8-49e5-82dc-81425a8ac18a)
 
 
 ---
