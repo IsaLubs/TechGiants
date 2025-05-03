@@ -363,6 +363,9 @@ In production the site has been tested on the following browsers,
 - The slugs for post details were based on the post titles. During manual testing, I found that errors occurred when creating or editing a post with the same title as another. I solved this by generating a random slug for each post, allowing titles to be the same without causing issues.
   
   ![Screenshot 2025-05-02 193741](https://github.com/user-attachments/assets/57f74db5-515f-4807-a37d-09572a15c91d)
+  ###After Payment image 
+  ![Screenshot 2025-05-02 193429](https://github.com/user-attachments/assets/26f70648-cad9-4996-b7c3-dd3c63643d86)
+
 
 ---
 ## Lighthouse
