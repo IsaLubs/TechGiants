@@ -5,7 +5,7 @@ from django_countries.widgets import CountrySelectWidget
 from core.models import Review
 
 PAYMENT_CHOICES = (
-    ('S', 'Stripe')
+    ('S', 'Stripe'),
 )
 
 
